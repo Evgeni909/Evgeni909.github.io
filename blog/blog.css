@@ -1,0 +1,270 @@
+@import url("../shared.css");
+
+* {
+    box-sizing: border-box;
+}
+
+/*Кнопка*/
+
+.main-button {
+    background-color: #efe939;
+    border: 1px solid #efe939;
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-button:hover {
+    background: orange;
+    color: white;
+    border: 1px solid orange;
+    transition: 0.3s
+}
+
+/*title*/
+.main-title {
+    font-size: 2.8rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+/*subtitle*/
+.main-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+}
+
+/*text*/
+.main-text {
+    color: #9b9b9b;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/*первый баннер*/
+
+.background-banner {
+    width: 100%;
+    background-image: url("../image/back2.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.background-banner h3 {
+    padding: 90px 0 20px 0;
+    color: white;
+    font-size: 2.8rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+.background-banner a {
+    color: #efe939;
+    text-decoration: none;
+}
+
+.background-banner a:after {
+    content: "\2192";
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.background-banner a:hover {
+    color: white;
+}
+
+.background-banner span {
+    color: white;
+}
+
+.background-banner a, .background-banner span {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding: 0 0.3rem;
+    padding-bottom: 90px;
+}
+
+/*blog posts*/
+
+.blog {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-subtitle-position {
+    text-align: center;
+}
+
+.blog-recent-posts {
+    width: 20%;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
+.blog-recent-content {
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.blog-recent-content img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    min-height: 120px;
+    min-width: 180px;
+}
+
+.main-blog {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.main-blog-content {
+    max-width: 800px;
+    max-height: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 15px;
+}
+
+.main-blog-content img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.blog-subtitle {
+    color: #131415;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 3rem;
+    font-family: 'Merriweather', serif;
+}
+
+.blog-text-position {
+    margin-top: 1rem;
+}
+
+.blog-dates {
+    font-family: 'Lato', sans-serif;
+    color: #9b9b9b;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 1.7rem 0 1rem 0;
+}
+
+.recent-blog-name {
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 20px;
+}
+
+.recent-blog-name:hover {
+    color: black;
+}
+
+.blog-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 6px 25px;
+    border: 2px solid #e7e7e7;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #2b2c2f;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: .7px;
+    background: transparent;
+    margin: 2rem 0 3rem 0;
+    transition: 0.5s;
+}
+
+.blog-button:hover {
+    background: greenyellow;
+}
+
+.blog-navigation {
+    margin-left: 1.8rem;
+}
+
+.blog-navigation-items {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.blog-navigation-item {
+    margin-right: 1rem;
+
+}
+
+.blog-navigation-items a {
+    text-decoration: none;
+    color: yellowgreen;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1130px) {
+    /*main-banner*/
+    .background-banner h3 {
+        font-size: 2rem;
+    }
+
+    .background-banner a, .background-banner span {
+        font-size: 15px;
+    }
+
+    .blog-recent-posts {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .blog-subtitle {
+        font-size: 22px;
+    }
+
+    .recent-blog-name {
+        font-size: 15px;
+    }
+
+    .blog-text-position {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .blog {
+        display: inline-block;
+    }
+
+    .blog-recent-posts {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
